@@ -1,185 +1,147 @@
 *{
-	padding: 0;
-	margin:  0;
-	/*box-sizing : border-box;*/
+padding: 0;
+margin: 0;
 }
+
+.fa {
+    color: #fff;
+}
+
 html{
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-/*.bgv{
-	position: absolute ;
-	right :0 ;
-	bottom:0;
-	min-width:100%;
-	min-height: 20% ;
-	width: auto;
-	height: auto;
-	z-index: -100;
-}*/
 
-
-/*@medis (min-aspect-ratio : 16/9)
-{
-	.video-background{
-		width:100%;
-		height:auto;
-	}
-	
-}
-@medis (manx-aspect-ratio : 16/9)
-{
-	.video-background{
-		width:auto;
-		height:100%;
-	}
-	
-}*/
-header{
-	/*width:100%;*/
-	height:100vh;
-
-	/*background-image : linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('./logo.png');
-	/*background-attachment: fixed;*/
-	/*background: rgba(0,0,100,0.5);*/
-	/*background-size: cover ;
-	background-repeat: :no-repeat;*/
-}
 .nav{
-	width: 100% ; height : 15vh;
-	background : rgb(159,96,96,0.3);
-	border-bottom: 5px solid rgb(159,96,96);
-	border-top: 5px solid rgb(159,96,96);
-	border-radius: 50px 20px;
-	box-shadow: 10px 10px 5px grey;
+    background : rgba(159, 96, 96, 0.3);
+    border-bottom: 5px solid rgb(159,96,96);
+    border-top: 5px solid rgb(159,96,96);
+    border-radius: 50px 20px;
+    box-shadow: 10px 10px 5px grey;
 }
-.logo{
-	margin :10px 50px;
-	height: 80px;
-	border-spacing:2px solid blue;
-	border-radius: 50px;
-	box-shadow: 10px 10px 5px grey;
+
+.nav img{
+    margin :10px 0px -10px;
+    height: 100px;
+    border-spacing:2px solid blue;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px grey;
 }
-.menu{
-	float: right;
-	list-style: none;
-	margin: 20px;
+
+nav {
+    float: right;
+    margin-top: 20px;
 }
-.menu li{
-	display :inline-block;
-	margin: 10px 5px;
-	padding :3px 6px;
+
+nav a{
+    text-decoration: none;
+    color: purple;
+    font-size:200%;
+    padding: 0px 30px;
+    margin: 10px;
+    border-left: 7px solid purple;
 }
-.menu li a{
-    justify-content: space-around;
-	text-decoration: none;
-	color : #fff;
-	padding:5px 10px;
-	letter-spacing: 2px;
-	word-spacing: 15px;
-	
-	border-left: 7px solid purple;
+
+nav a:hover{
+    background: rgb(191,191,191);
+    border-bottom: 7px solid purple ;
+    transition: .4s;
 }
-.menu li a:hover{
-	background: rgb(191,191,191);
-	border-bottom: 7px solid purple ;
-	transition: .4s;
+
+.hh{
+    background : rgba(118, 223, 205, 0.3);
+    z-index: -2;
+    background: linear-gradient(to left,#3a1c71,#d76d77,#ffaf7b);
 }
 
 .intro{
-	color: #5F9EA0;
-	margin-top: 8vh;
-	height :60vh;
-	font-weight: 60%;
-	font-size: 300%; 
-	justify-content: center;
-	line-height: 150%;
-	align-items: center;
+    background: linear-gradient(to left,#76b852,#64b3f4);
 }
-.hello{
-	margin-bottom:8vh ;
-	text-shadow: 50%;
-	color:#4d0000; 
-	position: relative;
-	animation-name: example;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
-}
-@keyframes example{
-	0%{color:red; left: 0px; top: 0px;}
-	25%{color:yellow; left: -300px; top: 0px;}
-	50%{color:blue; left: 0px; top: 0px;}
-	70%{color:green; left: 300px; top: 0px;}
-	100%{color:black; left:0px; top: 0px;}
 
+.hello h1{
+    position: relative;
+    font-size:100px;
+    padding: 0px 0px 0px;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
-	
-#sec3{
-	height: 200px;
-	width: auto;
-	background-color: rgba(242,204,255,0.6);
+
+@keyframes example{
+    0%{color:red; left: 0px; top: 0px;}
+    25%{color:yellow; left: -100px; top: 0px;}
+    50%{color:blue; left: 0px; top: 0px;}
+    100%{color:green; left: 0px; top: 0px;}
 }
+
+.intro img{
+    width: 20%;
+    margin-left: 40%;
+    border: solid 2px #000000;
+    border-radius: 300px;
+}
+
+.intro p{
+    color: #052b2c;
+    text-align: center;
+    line-height: 100%;
+    margin: 20px 0px;
+    font-size: 500%;
+}
+
 
 #sec2{
-height :700px;	
+    background: url(../image/aboutc.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
 }
 
-
-#sec2 img{
-	
-	width :100%;
-	/*background-image: url('../image/about.jpg ');
-	background-repeat: no-repeat;
-    background-size:cover;
-	background-attachment: fixed;*/
-	position:absolute;
-	top: 600px;
-	left:0px;
-	opacity: 0.3;
-	z-index: -1;
-    
+#sec2 h1{
+    text-align: center;
+    font-size:150px;
+    text-shadow:4px 2px  red;
 }
 
-#sec2 p{
-
-	line-height: 200%;
-	font-weight: bold;
-	color :#000; 
-	font-style: italic;
-	padding:0 5%;
-	word-spacing: 5px;
-
+.aboutSec{
+    font-size:180%;
+    margin: 40px 0px 0px;
+}
+.aboutSec h2{
+    text-shadow:4px 2px  rgb(153, 85, 150);
+} 
+.aboutSec p{
+    padding: 20px 0px 20px 100px;
+    line-height:30px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.about{
-	font-size: 130%;
+#footer{
+    background : rgba(159, 96, 96, 0.3);
 }
 
-
-
-
+.footerL{
+    display: inline;
+    list-style: none;
+}
 
 .send{
-	justify-content: center;
-	align-items: center;
-}
-div.send a
-{
-	height: 100px;
-	width: 100px;
-	background-color: #f5f6fa;
-	border-radius: 50px;
-	text-align: center;
-	margin:10px;
-	box-shadow:1px 4px 2px 2px grey;
-
-}
-div.send a i
-{
-	transition: all 0.3s linear;
-	padding: 5px;
-	margin-top: 25px;
-}
-div.send a:hover i{
-	transform:scale(1.4);
+    display: inline-block;
+    float: right;
+    font-size:40px;
+    margin-right: 40px;
+    margin-top: 60px;
 }
 
+.send a{
+    text-decoration: none;
+    background: #464545;
+    margin:40px;
+    padding: 20px;
+    border: solid 1px #000000;
+}
+
+.send a:hover i{
+    transform:scale(1.4);
+}
